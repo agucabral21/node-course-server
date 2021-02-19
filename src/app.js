@@ -21,7 +21,7 @@ app.use(express.static(publicDirectoryPath));
 
 app.get("", (req, res) => {
   res.render("index", {
-    title: "Main Page",
+    title: "Cali Weather",
     name: "Agus Cabral",
   });
 });

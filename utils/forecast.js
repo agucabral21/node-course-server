@@ -24,15 +24,15 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(undefined, {
         description:
-          "Hemos encontrado la temperatura para la zona de " +
+          "Forecast found for region of " +
           body.location.region +
-          ". La temperatura actual es de " +
+          ". It is currently " +
           body.current.temperature +
-          "ºC. Hay " +
+          " degress out. There is a  " +
           body.current.precip +
-          "% chance de que llueva. It's a " +
+          "% chance of rain. It's a " +
           body.current.weather_descriptions[0]+ 
-          " day",
+          " day.",
         icon: body.current.weather_icons[0],
       });
     }

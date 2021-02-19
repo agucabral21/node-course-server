@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node src/app.js",
-    "dev" : "nodemon src/app.js -e js,hbs",
-    "push-heroku": "git push heroku main"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,hbs",
+    "deploy": "git push heroku main"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,8 @@
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "postman-request": "^2.88.1-postman.28"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
