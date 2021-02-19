@@ -13,6 +13,10 @@ const messageTwo = document.querySelector('#message-2');
 
 weatherForm.addEventListener("submit", (event) => {
   event.preventDefault()
+
+  messageOne.textContent = 'Loading...'
+  messageTwo.textContent = ''
+
   const url = "/weather?address=" + search.value;
   fetch(url).then((response) => {
     response.json().then((data) => {
